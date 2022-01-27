@@ -28,13 +28,13 @@ class LinksModel: ObservableObject {
         }
     }
     init() {
-        loadLinks()
+//        loadLinks()
     }
     func createLink(with metadata: LPLinkMetadata) {
         let link = Link()
         link.id = Int(Date.timeIntervalSinceReferenceDate)
         link.metadata = metadata
-        links.append(link)
+        $links.append(link)
         saveLinks()
     }
     
@@ -65,18 +65,17 @@ class LinksModel: ObservableObject {
     fileprivate func loadLinks() {
         guard let docDirURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
         let linksURL = docDirURL.appendingPathComponent("links")
-     
+
         if FileManager.default.fileExists(atPath: linksURL.path) {
             do {
                 let data = try Data(contentsOf: linksURL)
-                guard let unarchived = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? [Link] else { return }
-                links = unarchived
+                guard (try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? [Link]) != nil else { return }
             } catch {
                 print(error.localizedDescription)
             }
         }
     }
-    
+
     
     
     

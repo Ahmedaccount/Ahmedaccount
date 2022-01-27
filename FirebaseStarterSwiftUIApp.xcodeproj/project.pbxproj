@@ -30,6 +30,7 @@
 		30F0AF9824E9868D0084CE6E /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F0AF9724E9868D0084CE6E /* SignInViewModel.swift */; };
 		30F0AF9B24E989020084CE6E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F0AF9A24E989020084CE6E /* CustomTextField.swift */; };
 		3909BF4026ADC0C1005ADB1B /* LinksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3909BF3F26ADC0C1005ADB1B /* LinksModel.swift */; };
+		3930896627A352D0007BC8F3 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3930896527A352D0007BC8F3 /* Link.swift */; };
 		3950C8A9257773F700D40BD4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3950C8A8257773F700D40BD4 /* GoogleService-Info.plist */; };
 		3970300925807EE40086367B /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3970300825807EE40086367B /* BookViewModel.swift */; };
 		3970300C2580810E0086367B /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3970300B2580810E0086367B /* Book.swift */; };
@@ -208,6 +209,7 @@
 		30F0AF9A24E989020084CE6E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		33EF7DB6D4437A5CDC876808 /* Pods_FirebaseStarterSwiftUIApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseStarterSwiftUIApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3909BF3F26ADC0C1005ADB1B /* LinksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksModel.swift; sourceTree = "<group>"; };
+		3930896527A352D0007BC8F3 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Link.swift; path = ../../../FirebaseStarterSwiftUIApp1/FirebaseStarterSwiftUIApp/Model/Link.swift; sourceTree = "<group>"; };
 		3950C8A8257773F700D40BD4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		39701BA62580724A0086367B /* FBSDKDeviceViewControllerBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBSDKDeviceViewControllerBase.h; sourceTree = "<group>"; };
 		39701BA72580724A0086367B /* FBSDKProfilePictureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBSDKProfilePictureView.m; sourceTree = "<group>"; };
@@ -4528,7 +4530,7 @@
 			children = (
 				30DDE0B824EABC9700208D32 /* User.swift */,
 				3970300B2580810E0086367B /* Book.swift */,
-				3909BF3F26ADC0C1005ADB1B /* LinksModel.swift */,
+				3930896527A352D0007BC8F3 /* Link.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -4550,6 +4552,7 @@
 			isa = PBXGroup;
 			children = (
 				30F0AF8F24E967920084CE6E /* StatusViewModel.swift */,
+				3909BF3F26ADC0C1005ADB1B /* LinksModel.swift */,
 				30A39BEC24DF999900EE7E2E /* SignUpViewModel.swift */,
 				30F0AF9724E9868D0084CE6E /* SignInViewModel.swift */,
 				3970300825807EE40086367B /* BookViewModel.swift */,
@@ -14204,6 +14207,7 @@
 				30D8C5EF24E77C8000CB0858 /* CustomModifier.swift in Sources */,
 				30F0AF9224E976410084CE6E /* SplashView.swift in Sources */,
 				30DDE0C124EC2AD300208D32 /* AppState.swift in Sources */,
+				3930896627A352D0007BC8F3 /* Link.swift in Sources */,
 				30D8C5ED24E7755600CB0858 /* WelcomeView.swift in Sources */,
 				30127DCB24DE506300576F65 /* AppDelegate.swift in Sources */,
 				30DDE0B924EABC9700208D32 /* User.swift in Sources */,
@@ -14365,6 +14369,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/FirebaseStarterSwiftUIApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -14385,6 +14390,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/FirebaseStarterSwiftUIApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
